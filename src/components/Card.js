@@ -20,7 +20,10 @@ const Card = ({img_url, heading, category , content, timestamp , Id , createdBy}
     <Image
         src={img_url}
         alt="Article"
+        width={500}
+        height={500}
         className="object-cover w-full h-64"    
+        
     />
     
 

@@ -42,6 +42,8 @@ Loading...
     
          <Image 
 src={item.img_url} 
+width={500}
+        height={500}
 className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" 
 alt="Image "
         />

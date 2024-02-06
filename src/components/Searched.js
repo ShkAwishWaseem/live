@@ -20,6 +20,7 @@ const router = useRouter();
         <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
             <Image
 className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src={img_url} alt="img" 
+unoptimized
             />
             
 

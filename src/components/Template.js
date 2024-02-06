@@ -78,7 +78,11 @@ const Template = () => {
               </h1>
               <Image
               
-              src={data.img_url} alt="Blog Image" className="w-full h-90 object-cover rounded-lg mb-6 md:mb-8 lg:mb-10" 
+              src={data.img_url} 
+              width={500}
+        height={500}
+              alt="Blog Image" 
+              className="w-full h-90 object-cover rounded-lg mb-6 md:mb-8 lg:mb-10" 
               />
               
               <div className="text-sm  text-gray-600 mb-4 md:mb-6 lg:mb-8">

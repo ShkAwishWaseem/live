@@ -28,8 +28,12 @@ import Image from 'next/image'
                 <Image
                     src={img_url}
                     alt="Banner Image"
+                    width={500}
+                    height={500}
                     className='object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl'
+                    // unoptimized={true}
                 />
+                
             
 
                 <div>
