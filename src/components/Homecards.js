@@ -2,6 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import Link from "next/link"
 import {motion} from "framer-motion"
+import Image from 'next/image'
 
         const Homecards = ({headline, content, img_url , createdAt , Id , category , createdBy}) => {
         const router = useRouter();
@@ -24,7 +25,12 @@ import {motion} from "framer-motion"
     <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:-mx-6">
             <div className="lg:w-3/4 lg:px-6">
-                <img className="object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl" src={img_url} alt="Banner Image"/>
+                <Image
+                    src={img_url}
+                    alt="Banner Image"
+                    className='object-cover object-center w-full h-80 xl:h-[28rem] rounded-xl'
+                />
+            
 
                 <div>
                 

@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import { useRouter } from 'next/router'
 import React from 'react'
 import Link from 'next/link'
+import Image from "next/image"
 
 const Searched = ({headline, content , img_url , category , createdAt , Id}) => {
      const truncateText = (text, maxWords) => {
@@ -17,7 +18,10 @@ const router = useRouter();
        
 
         <div className="mt-8 lg:-mx-6 lg:flex lg:items-center">
-            <img className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src={img_url} alt="img" />
+            <Image
+className="object-cover w-full lg:mx-6 lg:w-1/2 rounded-xl h-72 lg:h-96" src={img_url} alt="img" 
+            />
+            
 
             <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
                 <p className="text-sm color uppercase">{category}</p>

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import {useRouter} from "next/router"
 import useFetch from './useFetch';
 import Header from './Header';
-
+import Image from "next/image"
 
 const Template = () => {
   const router = useRouter();
@@ -76,7 +76,11 @@ const Template = () => {
               <h1 className="text-3xl md:text-3xl lg:text-3xl font-bold text-gray-800 mb-4 md:mb-6 lg:mb-8 sm:text-2xl">
                 {data.headline}
               </h1>
-              <img src={data.img_url} alt="Blog Image" className="w-full h-90 object-cover rounded-lg mb-6 md:mb-8 lg:mb-10" />
+              <Image
+              
+              src={data.img_url} alt="Blog Image" className="w-full h-90 object-cover rounded-lg mb-6 md:mb-8 lg:mb-10" 
+              />
+              
               <div className="text-sm  text-gray-600 mb-4 md:mb-6 lg:mb-8">
                 Published at  :  <span className="links font-semibold">
                 {new Date(data.createdAt).toLocaleString("en-US", {

@@ -4,6 +4,7 @@ import useFetch from "./useFetch";
 import ScrollToTopButton from "./STT";
 import Homecards from "./Homecards";
 import Footer from "./Footer";
+import Image from "next/image";
 
 const Bloglayout = (props) => {
   // const { data, loading } = useFetch(

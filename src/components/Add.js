@@ -22,7 +22,7 @@ const Add = () => {
     const username = decodedToken.name || ''; 
     setUserName(username);
     setFormData({ ...formData, createdBy: username });
-  }, []); 
+  }, [formData]); 
 
   const router = useRouter();
   const handleChange = (e) => {

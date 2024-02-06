@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Card = ({img_url, heading, category , content, timestamp , Id , createdBy}) => {
     
@@ -16,7 +17,12 @@ const Card = ({img_url, heading, category , content, timestamp , Id , createdBy}
  transition={{duration:1 , delay:0.3}}
 
 >
-    <img className="object-cover w-full h-64" src={img_url} alt="Article" />
+    <Image
+        src={img_url}
+        alt="Article"
+        className="object-cover w-full h-64"    
+    />
+    
 
     <div className="p-6">
         <div>

@@ -20,7 +20,7 @@ const Header = () => {
             else{
               setCook(false)
             }
-      })
+      }, [] )
 
   return (    
     <>
